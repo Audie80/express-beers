@@ -1,0 +1,26 @@
+{
+  "name": "express-beers",
+  "version": "1.0.0",
+  "description": "## A server-side companion to the [Angular Beers](https://github.com/LostInBrittany/angular-beers), [Polymer Beers](https://github.com/LostInBrittany/polymer-beers) and [Vue Beers](https://github.com/LostInBrittany/vue-beers) projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Audie80/express-beers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Audie80/express-beers/issues"
+  },
+  "homepage": "https://github.com/Audie80/express-beers#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
