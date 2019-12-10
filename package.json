@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Audie80/express-beers#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   },
   "devDependencies": {

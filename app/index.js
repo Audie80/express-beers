@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+var cors = require('cors');
+app.use(cors());
+
 app.get("/", function(req, res) {
   console.log("Received request from", req.ip);
   res.send("Hello World!");
@@ -17,11 +20,10 @@ app.get("/beer/:beerId", function(req, res) {
   res.json(beerDetails);
 });
 
-app.use("/img", express.static("img"));
+app.use("/beers/img", express.static("img"));   
 app.use(express.static("public"));
 
 var beerList = require("./beers/beers.json");
-console.log("Beers", beerList);
 
 var server = app.listen(3000, function() {
   var host = "localhost" || server.address().address;
